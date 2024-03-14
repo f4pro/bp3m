@@ -1,6 +1,6 @@
 <?php 
 defined('BASEPATH') or exit('No direct script access allowed');
-class a_spmi_model extends CI_Model
+class A_spmi_model extends CI_Model
 {
     public $table = 'about_spmi';
     public $id = 'about_spmi.id';

@@ -1,9 +1,9 @@
 <?php 
 defined('BASEPATH') or exit('No direct script access allowed');
-class Dokumen_model extends CI_Model
+class Keranjang_model extends CI_Model
 {
-    public $table = 'document';
-    public $id = 'document.id';
+    public $table = 'keranjang';
+    public $id = 'keranjang.id';
     
     public function __construct()
     {
@@ -12,7 +12,11 @@ class Dokumen_model extends CI_Model
 
     public function get()
     {
-        $this->db->from($this->table);
+        $id = $this->session->userdata('id');
+        $this->db->select('k.*, p.nama as nama, p.harga as harga');
+        $this->db->from('keranjang k');
+        $this->db->join('buku p', 'k.id_buku = p.id');
+        $this->db->where('k.id_user', $id);
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -42,6 +46,22 @@ class Dokumen_model extends CI_Model
         $this->db->where($this->id, $id);
         $this->db->delete($this->table);
         return $this->db->affected_rows();
+    }
+
+    public function delete_all($id)
+    {
+        $this->db->from($this->table);
+        $this->db->where('id_user', $id);
+        $this->db->delete($this->table);
+        return $this->db->affected_rows();
+    }
+
+    public function jumlah()
+    {
+        $id = $this->session->userdata('id');
+        $query = $this->db->get($this->table);
+        $this->db->where('id_user', $id);
+        return $query->num_rows();
     }
 }
 ?>

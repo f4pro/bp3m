@@ -1,9 +1,10 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class Dokumen_model extends CI_Model
+
+class Mahasiswa_model extends CI_Model
 {
-    public $table = 'document';
-    public $id = 'document.id';
+    public $table = 'mahasiswa';
+    public $id = 'mahasiswa.id';
     
     public function __construct()
     {
@@ -19,8 +20,10 @@ class Dokumen_model extends CI_Model
 
     public function getById($id)
     {
-        $this->db->from($this->table);
-        $this->db->where('id', $id);
+        $this->db->select('mahasiswa.* , prodi.nama as prodi');
+        $this->db->from('mahasiswa');
+        $this->db->join('prodi', 'mahasiswa.prodi = prodi.id');
+        $this->db->where('mahasiswa.id', $id);
         $query = $this->db->get();
         return $query->row_array();
     }
@@ -44,4 +47,3 @@ class Dokumen_model extends CI_Model
         return $this->db->affected_rows();
     }
 }
-?>

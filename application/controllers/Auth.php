@@ -48,11 +48,11 @@ class Auth extends CI_Controller
                 }
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password salah!</div>');
-                redirect('Auth');
+                redirect('auth');
             }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email belum terdaftar!</div>');
-            redirect('Auth');
+            redirect('auth');
         }
     }
     public function logout()

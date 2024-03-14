@@ -11,10 +11,10 @@
                                         <h1 class="h4 text-gray-900 mb-4">Halaman Login</h1>
                                     </div>
                                     <?= $this->session->flashdata('message'); ?>
-                                    <form class="user" method="POST" action="">
+                                    <form class="user" method="POST" action="<?= base_url('auth'); ?>">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" 
-                                            value="<?= set_value('email'); ?>" id="email" name="email" placeholder="Masukkan Alamat Email...">
+                                            value="<?= set_value('email'); ?>" id="email" name="email" placeholder="Masukkan Alamat Email..." </div>
                                             <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                                         </div>
                                         <div class="form-group">

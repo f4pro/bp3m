@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <article class="blog-post">
-                        <img src="<?=base_url('bp3m/assets/img/berita/') . $berita['gambar'];?>" class="img-res" alt="">
+                        <img src="<?=base_url('assets/img/berita/') . $berita['gambar'];?>" class="img-res" alt="">
                         <div class="post-content">
                             <h2 class="post-title"><?= $berita['judul'];?></h2>
                             <p><?= $berita['isi'];?></p>
@@ -73,7 +73,7 @@
 
                                 <div class="col-sm-4">
 
-                                        <img src="<?= base_url('bp3m/assets/img/berita/') . $row['gambar']; ?>"
+                                        <img src="<?= base_url('assets/img/berita/') . $row['gambar']; ?>"
                                             style="high:10%, width:10%;" alt="" class="img-fluid">
 
                                 </div>

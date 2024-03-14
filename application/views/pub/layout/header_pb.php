@@ -20,14 +20,14 @@
 
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png"> -->
 
-    <link href="assets_p/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets_p/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="assets_p/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets_p/css/style.css" rel="stylesheet">
     <!--<link href="<?php echo base_url();?>assets_p/css/responsive.css" rel="stylesheet">-->
     
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
 
-    <link rel="stylesheet" href="<?= base_url('bp3m/')?>assets_p/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>assets_p/css/magnific-popup.css">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="/"><img src="assets_p/img/logo/remodeled-logowh.png" alt="Logo"></a>
+                        <a class="navbar-brand" href="<?=base_url('home')?>"><img src="<?php echo base_url();?>assets_p/img/logo/remodeled-logowh.png" alt="Logo"></a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -55,31 +55,31 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto py-4 py-md-0">
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link active" href="aboutus_p">Tentang Kami</a>
+                                    <a class="nav-link active" href="<?=base_url('aboutus_p')?>">Tentang Kami</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                    <a class="nav-link" href="spmi_p">SPMI</a>
+                                    <a class="nav-link" href="<?=base_url('spmi_p')?>">SPMI</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
                                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                     aria-haspopup="true" aria-expanded="false">SPME</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="<?= base_url('bp3m/')?>akreditasi_p">Akreditasi</a>
-                                        <a class="dropdown-item" href="<?= base_url('bp3m/')?>sertifikat_p">Sertifikat</a>
+                                        <a class="dropdown-item" href="<?=base_url('akreditasi_p')?>">Akreditasi</a>
+                                        <a class="dropdown-item" href="<?=base_url('sertifikat_p')?>">Sertifikat</a>
                                     </div>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                    <a class="nav-link" href="<?= base_url('bp3m/')?>renbang_p">Renbang</a>
+                                    <a class="nav-link" href="<?=base_url('renbang_p')?>">Renbang</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                    <a class="nav-link" href="<?= base_url('bp3m/')?>kegiatan_p">Kegiatan</a>
+                                    <a class="nav-link" href="<?=base_url('kegiatan_p')?>">Kegiatan</a>
                                 </li>
                                 
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                    <a class="nav-link" href="<?= base_url('bp3m/')?>berita_p">Berita</a>
+                                    <a class="nav-link" href="<?=base_url('berita_p')?>">Berita</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
-                                    <a class="nav-link" href="<?= base_url('bp3m/')?>galeri_p">Galeri</a>
+                                    <a class="nav-link" href="<?= base_url('galeri_p')?>">Galeri</a>
                                 </li>
                             </ul>
                         </div>

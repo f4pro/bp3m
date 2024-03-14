@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 logo-footer">
-                    <img src="<?= base_url('bp3m/')?>assets_p/img/logo/pcr1.png" alt="s">
+                    <img src="<?php echo base_url();?>assets_p/img/logo/pcr1.png" alt="s">
                 </div>
                 <div class="col-md-3">
                     <h6 style="font-weight: 600;">Contact</h6>
@@ -25,11 +25,11 @@
                 <div class="col-4 col-md-2">
                     <h6 style="font-weight:600;">Pages</h6>
                     <ul class="footer-links">
-                        <li><a href="<?= base_url('bp3m/')?>Spmi_p">SPMI</a></li>
-                        <li><a href="<?= base_url('bp3m/')?>Akreditasi_p/">Akreditasi</a></li>
-                        <li><a href="<?= base_url('bp3m/')?>Sertifikat_p/">Sertifikasi</a></li>
-                        <li><a href="<?= base_url('bp3m/')?>Renbang_p/">Renbang</a></li>
-                        <li><a href="<?= base_url('bp3m/')?>Galeri_p/">Galeri</a></li>
+                        <li><a href="<?= base_url('Spmi_p/') ?>">SPMI</a></li>
+                        <li><a href="<?= base_url('Akreditasi_p/') ?>">Akreditasi</a></li>
+                        <li><a href="<?= base_url('Sertifikat_p/') ?>">Sertifikasi</a></li>
+                        <li><a href="<?= base_url('Renbang_p/') ?>">Renbang</a></li>
+                        <li><a href="<?= base_url('Galeri_p/') ?>">Galeri</a></li>
                     </ul>
                 </div>
 
@@ -72,24 +72,24 @@
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/bootstrap.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/bootstrap-select.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/jquery.slicknav.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/jquery.countTo.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/jquery.shuffle.min.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/script.js"></script>
-    <script src="<?= base_url('bp3m/')?>assets_p/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/bootstrap-select.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/jquery.slicknav.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/jquery.countTo.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/jquery.shuffle.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/script.js"></script>
+    <script src="assets_p/js/jquery.magnific-popup.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script> -->
 
        
 
-    <script src="<?= base_url('bp3m/')?>assets_p/js/script.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/script.js"></script>
 
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 
-    <script src="<?= base_url('bp3m/')?>assets_p/js/datatable_cust.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/datatable_cust.js"></script>
     
-    <script src="<?= base_url('bp3m/')?>assets_p/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url();?>assets_p/js/jquery.magnific-popup.min.js"></script>
     <script>
         $('#without-caption').magnificPopup({
 		type: 'image',

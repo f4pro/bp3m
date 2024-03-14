@@ -53,7 +53,7 @@ class Spmi extends CI_Controller
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data Berhasil Dihapus!</div>');
         }
-        redirect('Spmi');
+        redirect('spmi');
     }
 
 
@@ -79,7 +79,7 @@ class Spmi extends CI_Controller
             $id = $this->input->post('id');
             $this->Spmi_model->update(['id' => $id], $data);
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data Berhasil Diubah!</div>');
-            redirect('Spmi');
+            redirect('spmi');
         }
     }
 }

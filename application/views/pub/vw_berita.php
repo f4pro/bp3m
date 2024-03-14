@@ -308,8 +308,8 @@
                         ?>
 
                         <article class="blog-post item1">
-                            <a href="<?= base_url('bp3m/berita_p/berita_isi/') . $b['id'];?>">
-                                <img src="<?= base_url('bp3m/assets/img/berita/'). $b['gambar'];?>" alt="" 
+                            <a href="<?= base_url('berita_p/berita_isi/') . $b['id'];?>">
+                                <img src="<?= base_url('assets/img/berita/'). $b['gambar'];?>" alt="" 
                                 style="
                                     height: 300px;
                                     width: 700px;
@@ -317,9 +317,9 @@
                                 " class="img-res">                                
                             </a>
                             <div class="post-content">
-                                <h3 class="post-title"><a href="<?= base_url('bp3m/berita_p/berita_isi/') . $b['id'];?>"><?= $b['judul'];?></a></h3>
+                                <h3 class="post-title"><a href="<?= base_url('berita_p/berita_isi/') . $b['id'];?>"><?= $b['judul'];?></a></h3>
                                 <div class="text-right">
-                                    <a class="read-more" href="<?= base_url('bp3m/berita_p/berita_isi/') . $b['id'];?>">Read
+                                    <a class="read-more" href="<?= base_url('berita_p/berita_isi/') . $b['id'];?>">Read
                                         more
                                     </a>
                                 </div>
@@ -369,7 +369,7 @@
 									?>
 
                                     <a
-                                        href="<?= base_url('bp3m/berita_p/berita_isi/') . $row['id']; ?>"><b><?= $row['judul'];?></b></a>
+                                        href="<?= base_url('berita_p/berita_isi/') . $row['id']; ?>"><b><?= $row['judul'];?></b></a>
                                     <?php } ?>
                                 </div><!-- /.search-form -->
 
@@ -387,7 +387,7 @@
 
                                         <div class="col-sm-4">
 
-                                            <img src="<?= base_url('bp3m/assets/img/berita/') . $row['gambar']; ?>"
+                                            <img src="<?= base_url('assets/img/berita/') . $row['gambar']; ?>"
                                                 style="high:10%, width:10%;" alt="" class="img-fluid">
 
                                         </div>

@@ -309,8 +309,11 @@
                         ?>
 
                         <article class="blog-post item1">
-                            <a href="<?= base_url('bp3m/kegiatan_p/kegiatan_isi/') . $b['id'];?>">
-                                <img src="<?= base_url('bp3m/assets/img/kegiatan/'). $b['gambar_kegiatan'];?>" alt="" 
+                            <!-- <a href="<?= base_url('kegiatan_p/kegiatan_isi/') . $b['id'];?>">
+                                <div class="imgsize"></div>
+                            </a> -->
+                            <a href="<?= base_url('kegiatan_p/kegiatan_isi/') . $b['id'];?>">
+                                <img src="<?= base_url('assets/img/kegiatan/'). $b['gambar_kegiatan'];?>" alt="" 
                                 style="
                                     height: 300px;
                                     width: 700px;
@@ -318,9 +321,9 @@
                                 " class="img-res">
                             </a>
                             <div class="post-content">
-                                <h3 class="post-title"><a href="<?= base_url('bp3m/kegiatan_p/kegiatan_isi/') . $b['id'];?>"><?= $b['nama_kegiatan'];?></a></h3>
+                                <h3 class="post-title"><a href="<?= base_url('kegiatan_p/kegiatan_isi/') . $b['id'];?>"><?= $b['nama_kegiatan'];?></a></h3>
                                 <div class="text-right">
-                                    <a class="read-more" href="<?= base_url('bp3m/kegiatan_p/kegiatan_isi/') . $b['id'];?>">Read
+                                    <a class="read-more" href="<?= base_url('kegiatan_p/kegiatan_isi/') . $b['id'];?>">Read
                                         more
                                     </a>
                                 </div>
@@ -380,7 +383,7 @@
 									?>
 
                                     <a
-                                        href="<?= base_url('bp3m/kegiatan_p/kegiatan_isi/') . $row['id']; ?>"><b><?= $row['nama_kegiatan'];?></b></a>
+                                        href="<?= base_url('kegiatan_p/kegiatan_isi/') . $row['id']; ?>"><b><?= $row['nama_kegiatan'];?></b></a>
                                     <?php } ?>
 
 
@@ -404,7 +407,7 @@
 
                                         <div class="col-sm-4">
 
-                                            <img src="<?= base_url('bp3m/assets/img/kegiatan/') . $row['gambar_kegiatan']; ?>"
+                                            <img src="<?= base_url('assets/img/kegiatan/') . $row['gambar_kegiatan']; ?>"
                                                 style="high:10%, width:10%;" alt="" class="img-fluid">
 
                                         </div>
@@ -412,7 +415,7 @@
 
                                         <div class="col-sm-8">
                                             <h5><a
-                                                    href="<?= base_url('bp3m/kegiatan_p/kegiatan_isi/') . $row['id'];?>"><?=$row['nama_kegiatan'];?></a>
+                                                    href="<?= base_url('kegiatan_p/kegiatan_isi/') . $row['id'];?>"><?=$row['nama_kegiatan'];?></a>
                                             </h5>
 
                                             <?php
@@ -441,17 +444,33 @@
 							while ($row = mysqli_fetch_assoc($r)) {
 						?>
 
+
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><?=$row['kategori'];?><span>#</span></a></li>
+                                    </ul>
+
                                     <?php } ?>
+                                </div> -->
+                                <!-- /.widget-categories -->
                             </div>
-                            /.sidebar -->
+                            <!-- /.sidebar -->
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
             <b>
                         <ul class="listPage1">
                         </ul>
                     </b>
+
+            
+
+
+
+
         </div>
     </section><!-- /.section-portfolio -->
 

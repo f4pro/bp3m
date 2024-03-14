@@ -1,7 +1,7 @@
 <?php 
 defined ('BASEPATH') or exit('No direct script access allowed');
 
-class spmi_p extends CI_Controller
+class Spmi_p extends CI_Controller
 {
     public function __construct()
     {
@@ -12,9 +12,9 @@ class spmi_p extends CI_Controller
     }
     public function index()
     {
-        $data['documen'] = $this->dokumen_model->get();
-        $data['spmi'] = $this->a_spmi_model->get();
-        $data['redirect'] = $this->spmi_model->get();
+        $data['documen'] = $this->Dokumen_model->get();
+        $data['spmi'] = $this->A_spmi_model->get();
+        $data['redirect'] = $this->Spmi_model->get();
         $data['judul'] = 'SPMI';
         $this->load->view('pub/layout/header_pb', $data);
         $this->load->view('pub/vw_spmi', $data);
